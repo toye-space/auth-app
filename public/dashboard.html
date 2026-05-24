@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo">AuthApp</div>
+      <button class="btn-logout" onclick="logout()">Logout</button>
+    </nav>
+
+    <div class="dashboard">
+      <div class="welcome-card">
+        <h1>Welcome back <span class="highlight" id="username"></span> 👋</h1>
+        <p>You are successfully logged in.</p>
+        <div class="info-box">
+          <p><strong>User ID:</strong> <span id="user-id"></span></p>
+          <p><strong>Email:</strong> <span id="user-email"></span></p>
+          <p><strong>Token:</strong> <span id="user-token"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
